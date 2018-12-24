@@ -12,7 +12,11 @@
             height: 758px;
             margin: 0;
             background: url("head.jpg");
-            background-repeat: space;
+
+            background-size: cover;  //只支持IE9+
+            -webkit-background-size: cover; //webkit核心
+            -moz-background-size: cover; //FF核心
+            -o-background-size: cover;
             font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .head_top{
