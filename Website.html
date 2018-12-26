@@ -5,14 +5,14 @@
     <mate name="viewport" content="width=device-width,initial-scale=1"/>
     <title>静态页面</title>
     <style>
-        body,html{
-            margin: 0 auto;
-        }
+        body,html{margin: 0 auto;}
+        a{text-decoration: none;}
+
+        /*页头设置*/
         .header{
             height: 758px;
             margin: 0;
-            background: url("head.jpg");
-
+            background: url("img/head.jpg");
             background-size: cover;  //只支持IE9+
             -webkit-background-size: cover; //webkit核心
             -moz-background-size: cover; //FF核心
@@ -42,16 +42,14 @@
             display: flex;
             justify-content: space-between;
         }
-        a{
+        .nav-items{
             font-size: 0.8rem;
             /*font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;*/
             font-style: normal;
             text-decoration:none;
             color:#ffffff;
-
-
         }
-        a:hover{
+        .nav-items:hover{
             color: #fed135;
         }
 
@@ -97,6 +95,126 @@
             font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
+
+        /*主体设置*/
+        .main{
+            margin: 10px;
+        }
+        .services{
+            max-width: 1300px;
+            margin:50px auto;
+        }
+
+        .services-row{
+            max-width: 1200px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .services-row h2{
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            margin: 0 auto 10px auto;
+        }
+
+        .services-row p{
+            text-align: center;
+            margin:0 auto;
+            color: #777;
+        }
+
+        .services-column {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-items: inherit;
+        }
+
+        .contents{
+            width: 600px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .contents a{
+            margin: auto;
+            display: block;
+        }
+        .contents a img {
+            position:relative;
+        }
+
+        .contents .detail {
+            padding: 1px 16px;
+        }
+
+        .contents .detail h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+
+        .contents .detail p {
+            font-size: 10px;
+            color: #777;
+            margin: 0 auto;
+        }
+
+        .contents .text-center {
+            text-align: center;
+        }
+
+
+
+
+        /*页脚设置*/
+        .content{
+            /*margin: 0 auto;*/
+            height: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 15px;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .copyright{
+            flex: 3 3 200px;
+            margin: auto 70px;
+        }
+
+        .list-inline{
+            flex: 3 3 200px;
+            list-style: none;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .icon{
+            flex: 3 3 200px;
+            margin: auto 70px;
+        }
+        .icon .icon-cart{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        .items {
+            color: #fed135;
+            text-decoration-line: none;
+            margin:0 10px;
+        }
+
+        .items:hover,:focus{
+            text-decoration-line: underline;
+        }
+
+
     </style>
 </head>
 <body>
@@ -105,15 +223,15 @@
             <section class="logo">Start Project</section>
             <section class="head_top_first">
                 <nav class="navigation">
-                    <i><a href="#">SERVICES</a></i>
-                    <i><a href="#">PORTFOLIO</a></i>
-                    <i><a href="#">ABOUT</a></i>
-                    <i><a href="#">TEAM</a></i>
-                    <i><a href="#">CONTACT</a></i>
+                    <a href="#" class="nav-items">SERVICES</a>
+                    <a href="#" class="nav-items">PORTFOLIO</a>
+                    <a href="#" class="nav-items">ABOUT</a>
+                    <a href="#" class="nav-items">TEAM</a>
+                    <a href="#" class="nav-items">CONTACT</a>
                 </nav>
             </section>
-
         </article>
+
         <article class="head_bottom">
             <p class="head_bottom_title">Welcome To Our Studio!</p>
             <p class="head_bottom_paragraph">IT`S NICE TO MEET YOU</p>
@@ -121,11 +239,59 @@
         </article>
     </header>
     <main id="main">
-        <article></article>
+        <!--service版块-->
+        <section class="services">
+            <div class="services-row">
+                <h2>SERVICES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="services-column">
+                <div class="contents">
+                    <a href="#">
+                        <img src="img/E-Commerce.png"/>
+                    </a>
+                    <div class="detail text-center">
+                        <h4>E-Commerce</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="#">
+                        <img src="img/Responsive%20Design.png"/>
+                    </a>
+                    <div class="detail text-center">
+                        <h4>Responsive Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <a href="#">
+                        <img src="img/Web%20Security.png"/>
+                    </a>
+                    <div class="detail text-center">
+                        <h4>Web Security</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
+    <footer class="content">
+        <div class="copyright">
+            <p>Copyrght &copy; Your Website 2018</p>
+        </div>
+        <figure class="icon">
+            <a href="#" class="icon-cart"><img src="img/bird.png"/></a>
+            <a href="#" class="icon-cart"><img src="img/facebook.png"/></a>
+            <a href="#" class="icon-cart"><img src="img/in.png"/></a>
+        </figure>
 
+        <section class="list-inline">
+            <a href="#" class="items">Privacy Policy</a>
+            <a href="#" class="items">Terms of Use</a>
+        </section>
     </footer>
 </body>
 </html>
