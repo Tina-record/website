@@ -1,297 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <mate name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>静态页面</title>
-    <style>
-        body,html{margin: 0 auto;}
-        a{text-decoration: none;}
+    <head>
+        <meta charset="UTF-8">
+        <mate name="viewport" content="width=device-width,initial-scale=1" />
+            <title>静态页面</title>
+            <link href="./css/company.css" rel="stylesheet" type="text/css" />
+            <link href="./css/weibo.css" rel="stylesheet" type="text/css" />
+            <link href="./css/alert.css" rel="stylesheet" type="text/css" />
+            <link href="./css/collect-info.css" rel="stylesheet" type="text/css"
+                />
+            <link href="./css/navigation-bar.css" rel="stylesheet"
+                type="text/css" />
+            <link href="./css/real-footer.css" rel="stylesheet" type="text/css"
+                />
+        </head>
+        <body>
+            <unit class="company">
+                <header class="header">
+                    <article class="head_top">
+                        <section class="logo">Start Project</section>
+                        <section class="head_top_first">
+                            <nav class="navigation">
+                                <a href="#" class="nav-items">SERVICES</a>
+                                <a href="#" class="nav-items">PORTFOLIO</a>
+                                <a href="#" class="nav-items">ABOUT</a>
+                                <a href="#" class="nav-items">TEAM</a>
+                                <a href="#" class="nav-items">CONTACT</a>
+                            </nav>
+                        </section>
+                    </article>
 
-        /*页头设置*/
-        .header{
-            height: 758px;
-            margin: 0;
-            background: url("img/head.jpg");
-            background-size: cover;  //只支持IE9+
-            -webkit-background-size: cover; //webkit核心
-            -moz-background-size: cover; //FF核心
-            -o-background-size: cover;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-        .head_top{
-            height: 60px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
+                    <article class="head_bottom">
+                        <p class="head_bottom_title">Welcome To Our Studio!</p>
+                        <p class="head_bottom_paragraph">IT`S NICE TO MEET YOU</p>
+                        <a class="head_bottom_button" name="#main">TELL ME MORE</a>
+                    </article>
+                </header>
+                <main id="main">
+                    <!--service版块-->
+                    <section class="services">
+                        <div class="services-row">
+                            <h2>SERVICES</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="services-column">
+                            <div class="contents">
+                                <a href="#">
+                                    <img src="img/E-Commerce.png" />
+                                </a>
+                                <div class="detail text-center">
+                                    <h4>E-Commerce</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Minima maxime quam
+                                        architecto quo inventore harum ex magni,
+                                        dicta impedit.</p>
+                                </div>
+                            </div>
+                            <div class="contents">
+                                <a href="#">
+                                    <img src="img/Responsive%20Design.png" />
+                                </a>
+                                <div class="detail text-center">
+                                    <h4>Responsive Design</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Minima maxime quam
+                                        architecto quo inventore harum ex magni,
+                                        dicta impedit.</p>
+                                </div>
+                            </div>
+                            <div class="contents">
+                                <a href="#">
+                                    <img src="img/Web%20Security.png" />
+                                </a>
+                                <div class="detail text-center">
+                                    <h4>Web Security</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Minima maxime quam
+                                        architecto quo inventore harum ex magni,
+                                        dicta impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-        .logo{
-            flex: 3;
-            font-size: 2rem;
-            color: #fed135;
-        }
-        .head_top_first{
-            flex: 4;
-        }
+                </main>
 
+                <footer class="content">
+                    <div class="copyright">
+                        <p>Copyrght &copy; Your Website 2018</p>
+                    </div>
+                    <figure class="icon">
+                        <a href="#" class="icon-cart"><img src="img/bird.png" /></a>
+                        <a href="#" class="icon-cart"><img
+                                src="img/facebook.png" /></a>
+                        <a href="#" class="icon-cart"><img src="img/in.png" /></a>
+                    </figure>
 
-        .navigation{
-            max-width: 27rem;
-            display: flex;
-            justify-content: space-between;
-        }
-        .nav-items{
-            font-size: 0.8rem;
-            /*font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;*/
-            font-style: normal;
-            text-decoration:none;
-            color:#ffffff;
-        }
-        .nav-items:hover{
-            color: #fed135;
-        }
+                    <section class="list-inline">
+                        <a href="#" class="items">Privacy Policy</a>
+                        <a href="#" class="items">Terms of Use</a>
+                    </section>
+                </footer>
+            </unit>
 
+            <unit class="weibo">
+                <div class="unit">
+                    <div class="content-right">
+                        <img
+                            src="http://img95.699pic.com/photo/50049/3791.jpg_wh860.jpg"
+                            alt="">
+                    </div>
+                    <div class="main">
+                        <div class="head">
+                            <img
+                                src="//tvax2.sinaimg.cn/crop.0.0.512.512.180/0078CUxfly8fvsfntge2fj30e80e8q3m.jpg"
+                                alt="">
+                            <span class="name word-middle">
+                                林慕之
+                            </span>
+                            <span class="distance-time word-middle">8 小时前
+                            </span>
+                        </div>
+                        <div class="title">
+                            <h2>坚持“读书”这些年, 人生真是太值了!</h2>
+                        </div>
+                        <div class="content">
+                            <p>
+                                2017.5.27|NO.18 前几天, 在国内大学的朋友给我发来微信。
+                                她说：五年前，刚进大学的时候，我们是一样的起点，如果当时我和你一样坚持不断的坚持学习...
+                            </p>
+                        </div>
+                        <div class="label">
+                            <a href="#">读书</a>
+                        </div>
 
-        .head_bottom{
-            height: 600px;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .head_bottom_title{
-            font-size: 40px;
-            color:#fed135;
-            font-weight: bold;
-            font-style:italic;
-        }
-
-        .head_bottom_paragraph{
-            font-size: 65px;
-            color: #fed135;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 800;
-            margin: 10px 0 65px;
-
-        }
-
-        .head_bottom_button{
-            /*text-align: center;*/
-            width: 200px;
-            height: 60px;
-            background-color: #fed135;
-            color:#fff;
-            font-size: 20px;
-            border-radius: 0.3rem;
-            display: flex;
-            /*flex-flow: column wrap;*/
-            justify-content: center;
-            align-items: center;
-
-            font-weight:bolder;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-
-        /*主体设置*/
-        .main{
-            margin: 10px;
-        }
-        .services{
-            max-width: 1300px;
-            margin:50px auto;
-        }
-
-        .services-row{
-            max-width: 1200px;
-            margin: 10px auto;
-            display: flex;
-            flex-direction: column;
-        }
-        .services-row h2{
-            width: 300px;
-            font-size: 30px;
-            text-align: center;
-            margin: 0 auto 10px auto;
-        }
-
-        .services-row p{
-            text-align: center;
-            margin:0 auto;
-            color: #777;
-        }
-
-        .services-column {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            justify-items: inherit;
-        }
-
-        .contents{
-            width: 600px;
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-        }
-        .contents a{
-            margin: auto;
-            display: block;
-        }
-        .contents a img {
-            position:relative;
-        }
-
-        .contents .detail {
-            padding: 1px 16px;
-        }
-
-        .contents .detail h4 {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0 auto;
-        }
-
-        .contents .detail p {
-            font-size: 10px;
-            color: #777;
-            margin: 0 auto;
-        }
-
-        .contents .text-center {
-            text-align: center;
-        }
-
-
-
-
-        /*页脚设置*/
-        .content{
-            /*margin: 0 auto;*/
-            height: 50px;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            font-size: 15px;
-            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        .copyright{
-            flex: 3 3 200px;
-            margin: auto 70px;
-        }
-
-        .list-inline{
-            flex: 3 3 200px;
-            list-style: none;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .icon{
-            flex: 3 3 200px;
-            margin: auto 70px;
-        }
-        .icon .icon-cart{
-            width: 20px;
-            height: 20px;
-            border-radius: 50px;
-        }
-
-        .items {
-            color: #fed135;
-            text-decoration-line: none;
-            margin:0 10px;
-        }
-
-        .items:hover,:focus{
-            text-decoration-line: underline;
-        }
-
-
-    </style>
-</head>
-<body>
-    <header class="header">
-        <article class="head_top">
-            <section class="logo">Start Project</section>
-            <section class="head_top_first">
-                <nav class="navigation">
-                    <a href="#" class="nav-items">SERVICES</a>
-                    <a href="#" class="nav-items">PORTFOLIO</a>
-                    <a href="#" class="nav-items">ABOUT</a>
-                    <a href="#" class="nav-items">TEAM</a>
-                    <a href="#" class="nav-items">CONTACT</a>
-                </nav>
-            </section>
-        </article>
-
-        <article class="head_bottom">
-            <p class="head_bottom_title">Welcome To Our Studio!</p>
-            <p class="head_bottom_paragraph">IT`S NICE TO MEET YOU</p>
-            <a class="head_bottom_button" name="#main">TELL ME MORE</a>
-        </article>
-    </header>
-    <main id="main">
-        <!--service版块-->
-        <section class="services">
-            <div class="services-row">
-                <h2>SERVICES</h2>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="services-column">
-                <div class="contents">
-                    <a href="#">
-                        <img src="img/E-Commerce.png"/>
-                    </a>
-                    <div class="detail text-center">
-                        <h4>E-Commerce</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
-                <div class="contents">
-                    <a href="#">
-                        <img src="img/Responsive%20Design.png"/>
-                    </a>
-                    <div class="detail text-center">
-                        <h4>Responsive Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </unit>
+
+            <unit class="alert">
+                <div class="info reward">
+                    <div class="close">
+                        <a href="#">x</a>
+                    </div>
+                    <div class="title">
+                        恭喜你
+                    </div>
+                    <div class="content">
+                        获得一笔游客订单,继续加油吧
                     </div>
                 </div>
-                <div class="contents">
-                    <a href="#">
-                        <img src="img/Web%20Security.png"/>
-                    </a>
-                    <div class="detail text-center">
-                        <h4>Web Security</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <div class="info notice">
+                    <div class="close">
+                        <a href="#">x</a>
+                    </div>
+                    <div class="title">
+                        通知
+                    </div>
+                    <div class="content">
+                        每天坚持自学,不要忘了
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="info danger">
+                    <div class="close">
+                        <a href="#">x</a>
+                    </div>
+                    <div class="title">
+                        天啊
+                    </div>
+                    <div class="content">
+                        竟然几天没做写代码了
+                    </div>
+                </div>
+                <div class="info warning">
+                    <div class="close">
+                        <a href="#">x</a>
+                    </div>
+                    <div class="title">
+                        警告
+                    </div>
+                    <div class="content">
+                        学如逆水行舟,不进则退
+                    </div>
+                </div>
+            </unit>
 
-    </main>
+            <unit class="collect-info">
+                <div class="frame">
+                    <div class="title">
+                        信息收集表
+                    </div>
+                    <div class="project">
+                        <div class="name">
+                            姓名
+                        </div>
+                        <div class="content">
+                            <input type="text">
+                        </div>
+                        <div class="name">
+                            QQ
+                        </div>
+                        <div class="content">
+                            <input type="text">
+                        </div>
+                        <div class="name">
+                            要说的话
+                        </div>
+                        <div class="multi-content">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="check clearfix">
+                            <div class="multiselect">
+                                <div class="multi">
+                                    <input type="checkbox"> Milk
+                                </div>
+                                <div class="multi">
+                                    <input type="checkbox"> Sugar
+                                </div>
+                                <div class="multi">
+                                    <input type="checkbox"> Lemon
+                                </div>
 
-    <footer class="content">
-        <div class="copyright">
-            <p>Copyrght &copy; Your Website 2018</p>
-        </div>
-        <figure class="icon">
-            <a href="#" class="icon-cart"><img src="img/bird.png"/></a>
-            <a href="#" class="icon-cart"><img src="img/facebook.png"/></a>
-            <a href="#" class="icon-cart"><img src="img/in.png"/></a>
-        </figure>
+                            </div>
+                            <div class="single-select">
+                                <div class="radio">
+                                    <input id="radioButton" type="radio"
+                                        name="ss">Male
+                                </div>
+                                <div class="radio">
+                                    <input id="radioButton" type="radio"
+                                        checked="true" name="ss">Female
+                                </div>
+                            </div>
+                        </div>
+                        <button class="square">
+                            提交
+                        </button>
 
-        <section class="list-inline">
-            <a href="#" class="items">Privacy Policy</a>
-            <a href="#" class="items">Terms of Use</a>
-        </section>
-    </footer>
-</body>
-</html>
+                    </div>
+                </div>
+            </unit>
+
+            <unit class="navigation-bar">
+                <div class="head">
+                    <a href="#" class="">首页</a>
+                    <a href="#" class="">作品</a>
+                    <div class="more">
+                        <a href="#">更多</a>
+                        <div class="more-level2tab">
+                            <a
+                                href="https://github.com/Tina-record?tab=repositories">我的Github</a>
+                            <a href="https://blog.csdn.net/cbkting">我的C博客</a>
+                            <a href="https://juejin.im">掘金</a>
+                            <a href="https://zhihu.com">知乎</a>
+                        </div>
+                    </div>
+                </div>
+            </unit>
+            <unit class="real-footer">
+                <span>😺到底啦～我会增加更多小作品的,请联系我吧</span>
+            </unit>
+
+        </body>
+    </html>
