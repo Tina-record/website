@@ -11,7 +11,7 @@ a {
 .company .header {
     height: 758px;
     margin: 0;
-    background: url("/img/head.jpg");
+    background: url("../img/head.jpg");
     background-size: cover; //只支持IE9+
     -webkit-background-size: cover; //webkit核心
     -moz-background-size: cover; //FF核心
