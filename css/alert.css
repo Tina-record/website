@@ -1,0 +1,59 @@
+/*
+奖励reward
+通知notice
+危险danger
+警告warning
+
+*/
+
+.alert {
+    display: inline-block;
+}
+
+.alert .info {
+    //border:1px solid blue;
+    color: white;
+    border-radius: 3px;
+    width: 600px;
+    height: 100px;
+    margin: 30px;
+}
+
+.alert .info .title {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    width: 500px;
+}
+
+.alert .info .content {
+    margin: 10px;
+}
+
+.alert .info .close {
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px;
+    font-size: 23px;
+}
+
+.alert .info .close a {
+    text-decoration: none;
+    color: white;
+}
+
+.alert .info.reward {
+    background: #1aa91a;
+}
+
+.alert .info.notice {
+    background: #0c9cf5;
+}
+
+.alert .info.danger {
+    background: #f93939;
+}
+
+.alert .info.warning {
+    background: #ffa500;
+}

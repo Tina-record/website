@@ -1,0 +1,60 @@
+.weibo .unit {
+    border: solid;
+    border-width: 2px 0 2px 0;
+    border-color: #eee;
+    padding-top: 20px;
+    padding-right: 20 px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.weibo .head {
+    font-size: 0;
+}
+
+.weibo .head>img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.weibo .head>.word-middle {
+    display: inline-block;
+    vertical-align: 20px;
+    font-size: 16px;
+    margin-left: 0.7em;
+}
+
+.weibo .head>.distance-time {
+    color: #888
+}
+
+.weibo .main p {
+    line-height: 2;
+}
+
+.weibo .main {
+    width: 596px;
+    font-size: 17px;
+}
+
+.weibo .label a {
+    text-decoration: none;
+    border: 1px red solid;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.weibo .content-right {
+    color: blue;
+    width: 220px;
+    float: right;
+    padding: 20px;
+}
+
+.weibo .content-right>img {
+    height: 210px;
+    width: 200px;
+    border-radius: 5px;
+}

@@ -1,0 +1,8 @@
+.real-footer span {
+    display: inline-block;
+    //margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    width: 100%;
+}

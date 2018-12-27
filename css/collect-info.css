@@ -1,0 +1,71 @@
+.collect-info {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.collect-info .frame {
+    width: 800px;
+    height: 600px;
+    box-shadow: 5px 0 10px #d3d3d3, -5px 0 10px #d3d3d3, 0 5px 10px #d3d3d3;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.collect-info .title {
+    background: #009688;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.collect-info .content input {
+    //background:no-repeat 0 0 scroll ＃EEEEEE;
+    border: none;
+    outline: medium;
+    border-bottom: 1px solid #cecece;
+    width: 750px;
+}
+
+.collect-info .multi-content textarea {
+    border: none;
+    outline: medium;
+    border-bottom: 1px solid #cecece;
+    width: 750px;
+}
+
+.collect-info .project {
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.collect-info .multiselect {
+    float: left;
+    width: 50%;
+}
+
+.collect-info .single-select {
+    float: left;
+    width: 50%;
+}
+
+.collect-info .clearfix {
+    *zoom: 1;
+}
+
+.collect-info .clearfix:after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.collect-info .square {
+    border: none;
+    width: 60px;
+    height: 30px;
+    background: #009688;
+    color: white;
+    margin-top: 10px;
+}
