@@ -94,6 +94,8 @@ a {
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
+
     font-weight: bolder;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

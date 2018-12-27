@@ -1,3 +1,7 @@
+.navigation-bar {
+    display: none;
+}
+
 .navigation-bar .head {
     width: 70%;
     height: 40px;

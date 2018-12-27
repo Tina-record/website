@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="shortcut icon" type="image/x-icon"
+            href="./img/favicon-32x32.png" media="screen" />
         <meta charset="UTF-8">
         <mate name="viewport" content="width=device-width,initial-scale=1" />
             <title>静态页面</title>
@@ -13,19 +15,23 @@
                 type="text/css" />
             <link href="./css/real-footer.css" rel="stylesheet" type="text/css"
                 />
+            <link href="./css/introjs.css" rel="stylesheet" type="text/css"
+                />
+
         </head>
         <body>
             <unit class="company">
                 <header class="header">
-                    <article class="head_top">
+                    <article class="head_top" data-step="1"
+                        data-intro="二次Flex布局: 使间距在不同屏幕尺寸下,也能始终保持一致.">
                         <section class="logo">Start Project</section>
                         <section class="head_top_first">
                             <nav class="navigation">
-                                <a href="#" class="nav-items">SERVICES</a>
-                                <a href="#" class="nav-items">PORTFOLIO</a>
-                                <a href="#" class="nav-items">ABOUT</a>
-                                <a href="#" class="nav-items">TEAM</a>
-                                <a href="#" class="nav-items">CONTACT</a>
+                                <a href="#alert" class="nav-items">微博组件</a>
+                                <a href="#alert" class="nav-items">Alert四种</a>
+                                <a href="#alert" class="nav-items">朴素信息收集表格</a>
+                                <a href="#alert" class="nav-items">TEAM</a>
+                                <a href="#alert" class="nav-items">CONTACT</a>
                             </nav>
                         </section>
                     </article>
@@ -33,7 +39,8 @@
                     <article class="head_bottom">
                         <p class="head_bottom_title">Welcome To Our Studio!</p>
                         <p class="head_bottom_paragraph">IT`S NICE TO MEET YOU</p>
-                        <a class="head_bottom_button" name="#main">TELL ME MORE</a>
+                        <a class="head_bottom_button" name="#main"
+                            onclick="introJs().start()">点我 开启导航</a>
                     </article>
                 </header>
                 <main id="main">
@@ -126,7 +133,7 @@
                         </div>
                         <div class="content">
                             <p>
-                                2017.5.27|NO.18 前几天, 在国内大学的朋友给我发来微信。
+                                2018.12.27|NO.18 前几天, 在国内大学的朋友给我发来微信。
                                 她说：五年前，刚进大学的时候，我们是一样的起点，如果当时我和你一样坚持不断的坚持学习...
                             </p>
                         </div>
@@ -138,10 +145,10 @@
                 </div>
             </unit>
 
-            <unit class="alert">
+            <unit class="alert" data-step="2" data-intro="四枚 风格艳丽 的Alert献上">
                 <div class="info reward">
                     <div class="close">
-                        <a href="#">x</a>
+                        <a href="#" name="alert">x</a>
                     </div>
                     <div class="title">
                         恭喜你
@@ -207,7 +214,7 @@
                             要说的话
                         </div>
                         <div class="multi-content">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea cols="30" rows="10">Have fun,My Friend 😃</textarea>
                         </div>
                         <div class="check clearfix">
                             <div class="multiselect">
@@ -257,9 +264,11 @@
                     </div>
                 </div>
             </unit>
-            <unit class="real-footer">
-                <span>😺到底啦～我会增加更多小作品的,请联系我吧</span>
+            <unit class="real-footer" data-step="3" data-intro="以及最后一步:)">
+                <span>😺到底啦～如果你觉得有些新意,别迟疑,请联系我吧</span>
             </unit>
+
+            <script type="text/javascript" src="./js/intro.js"></script>
 
         </body>
     </html>
